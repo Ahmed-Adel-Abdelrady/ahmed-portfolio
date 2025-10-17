@@ -1,0 +1,72 @@
+{
+  "name": "AHMED ADEL ABDELRADY AHMED",
+  "tagline": "Mechatronics \u2022 AI/IoT \u2022 Robotics",
+  "intro_html": "I\u2019m an optimistic, ambitious Mechatronics Engineer with a strong foundation in mechanical and electrical principles, complemented by competence in computer science, pneumatic systems, and robotics. I\u2019m especially focused on how <strong>AI</strong> can elevate mechatronic systems\u2014from data\u2011driven modelling and intelligent control to embedded machine learning and automation. My goal is to build reliable, safe, and human\u2011centred systems where rigorous engineering meets modern AI.",
+  "projects": [
+    {
+      "title": "AI\u2011Assisted Upper\u2011Limb Prosthetic",
+      "desc": "Surface EMG gesture control with servo actuation and sensory feedback pipeline."
+    },
+    {
+      "title": "Parkinson\u2019s Monitoring IoT",
+      "desc": "ESP32\u2011based wearable features streaming to dashboard; experimentation with edge AI."
+    },
+    {
+      "title": "Boe\u2011Bot Line/Obstacle Robot",
+      "desc": "IR line following with ultrasonic obstacle avoidance; simple PID tuning."
+    }
+  ],
+  "skills": [
+    "Python, C/C++",
+    "MATLAB/Simulink",
+    "ROS2 (TurtleBot3)",
+    "SolidWorks (CAD)",
+    "PLC & LabVIEW",
+    "ESP32, Arduino, IoT",
+    "TensorFlow/TinyML"
+  ],
+  "swot": {
+    "strengths": [
+      "PO4\u2013PO12 = 1.0: Investigation, design, communication, sustainability, professional practice, ethics, teamwork/lead, lifelong learning, and project management are all consistently demonstrated.",
+      "PO3 = 0.89: Confident with tools/tech (ROS2, SolidWorks, MATLAB, embedded/IoT).",
+      "PO2 = 0.86: Strong problem analysis and decomposition."
+    ],
+    "weaknesses": [
+      "PO1 = 0.50: Core maths/science theory needs deeper practice and clearer use in reports.",
+      "Evidence mapping: Artefacts can link more explicitly to each PO with metrics/screenshots."
+    ],
+    "opportunities": [
+      "Lift PO1: Weekly problem sets + add derivations/models to project docs.",
+      "Close PO2/PO3 gap: Add small benchmarks/A\u2013B tests and uncertainty/error analyses.",
+      "Stronger PO evidence: Add risk, ethics and sustainability checklists to each repo."
+    ],
+    "threats": [
+      "Over\u2011reliance on tools instead of theory slows PO1\u2013PO3 growth.",
+      "Rushing may skip safety/ethics paperwork (PO8/PO9).",
+      "Hardware delays or scope creep reduce time for PO1 practice."
+    ]
+  },
+  "links": {
+    "email": "mailto:ahmedadelabdelrady2010@gmail.com",
+    "phone": "+60183780115",
+    "linkedin": "https://www.linkedin.com/in/ahmed-adel-abdelrady",
+    "github": "https://github.com/Ahmed-Adel-Abdelrady",
+    "location": "Selangor, Malaysia",
+    "resume": "assets/Ahmed-Adel-Resume.pdf",
+    "rcai": "assets/RCAI-certificate.pdf"
+  },
+  "po_values": [
+    0.5,
+    0.86,
+    0.89,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ]
+}

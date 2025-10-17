@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+<title>Ahmed Adel | Portfolio</title></head><body>
+<header class="topnav"><div class="wrap"><div class="brand"><div class="logo" aria-hidden="true"></div><strong>Ahmed Adel</strong></div><nav class="menu"><a href="index.html" class="navlink">Home</a>
+<a href="projects-skills.html" class="navlink">Projects & Skills</a>
+<a href="swot-po.html" class="navlink active">SWOT & PO</a>
+<a href="contact.html" class="navlink">Contact</a></nav></div></header>
+<main class="container">
+  <section class="card">
+    <h1>SWOT & PO</h1>
+    <div class="swot-grid">
+      <div class="card"><h3>Strengths</h3><ul><li>PO4–PO12 = 1.0: Investigation, design, communication, sustainability, professional practice, ethics, teamwork/lead, lifelong learning, and project management are all consistently demonstrated.</li><li>PO3 = 0.89: Confident with tools/tech (ROS2, SolidWorks, MATLAB, embedded/IoT).</li><li>PO2 = 0.86: Strong problem analysis and decomposition.</li></ul></div>
+      <div class="card"><h3>Weaknesses</h3><ul><li>PO1 = 0.50: Core maths/science theory needs deeper practice and clearer use in reports.</li><li>Evidence mapping: Artefacts can link more explicitly to each PO with metrics/screenshots.</li></ul></div>
+      <div class="card"><h3>Opportunities</h3><ul><li>Lift PO1: Weekly problem sets + add derivations/models to project docs.</li><li>Close PO2/PO3 gap: Add small benchmarks/A–B tests and uncertainty/error analyses.</li><li>Stronger PO evidence: Add risk, ethics and sustainability checklists to each repo.</li></ul></div>
+      <div class="card"><h3>Threats</h3><ul><li>Over‑reliance on tools instead of theory slows PO1–PO3 growth.</li><li>Rushing may skip safety/ethics paperwork (PO8/PO9).</li><li>Hardware delays or scope creep reduce time for PO1 practice.</li></ul></div>
+    </div>
+  </section>
+  <section class="card">
+    <h2>PO Radar (full)</h2>
+    <div class="center"><div class="radarBox"><canvas id="poChart"></canvas></div></div>
+  </section>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const labels = Array.from({length:12}, (_,i)=>`PO${i+1}`);
+  const values = [0.5, 0.86, 0.89, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0];
+  const ctx = document.getElementById('poChart');
+  new Chart(ctx, {
+    type: 'radar',
+    data: { labels, datasets: [{ label: 'PO Score', data: values, fill: false, borderWidth: 2, pointRadius: 3 }] },
+    options: {
+      responsive: true, maintainAspectRatio: false, layout: { padding: 8 },
+      scales: { r: { min:0, max:1, ticks: { display:false }, pointLabels: { display:true, padding:6 }, grid: { circular:true } } },
+      plugins: { legend: { display:false } }
+    }
+  });
+});
+</script>
+<footer class="container"><p>© <span id="yr"></span> Ahmed Adel — GitHub Pages</p></footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script></body></html>
